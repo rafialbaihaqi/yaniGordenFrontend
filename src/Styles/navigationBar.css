@@ -1,0 +1,94 @@
+.navBrand {
+  font-weight: bold;
+  font-size: 24px;
+  color: #2e1114 !important;
+}
+
+.navbar {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navlink {
+  color: #2e1114 !important;
+  border-radius: 10px !important;
+}
+
+/* mobile responsive navbar font */
+@media (max-width: 576px) {
+  .navlink {
+    font-size: 14px !important;
+  }
+}
+
+.navlink:hover {
+  background-color: #e5d4cd !important;
+}
+
+
+.buttonNav {
+  color: #2e1114 !important;
+  background-color: #b28474 !important;
+  font-weight: bold !important;
+  border-radius: 10px !important;
+  width: 93px;
+  height: 35px;
+  align-items: center;
+  border: none !important;
+}
+.buttonNav:hover {
+  background-color: #e5d4cd !important;
+}
+
+/* img profil */
+.img-profil {
+  width: 40px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* dropdown profil */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* menu item profil */
+.menuItem {
+  background-color: white;
+  padding: 10px;
+  position: absolute;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.ulProfil {
+  margin-left: -14%;
+}
+
+.liProfil {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 6px;
+}
+
+ul li:hover {
+  background-color: #e5d4cd;
+}
+
+/* respoonsive mobile */
+@media (max-width: 576px) {
+  .menuItem {
+    margin-left: -30%;
+  }
+}
+@media (max-width: 360px) {
+  .btn-add {
+    font-size: 12px !important;
+    margin-left: 16%;
+  }
+}
