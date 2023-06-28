@@ -23,7 +23,7 @@ const TentangKami = () => {
       });
       console.log(res);
       //   nampung data yang sudah diambil
-      setTentangKami(res.data.data[1]);
+      setTentangKami(res.data.data);
     } catch (error) {
       console.log(error);
     }
