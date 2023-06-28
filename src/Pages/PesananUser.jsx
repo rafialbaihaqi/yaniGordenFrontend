@@ -82,7 +82,10 @@ const PesananUser = () => {
                       {!sendDetailPemesanan ? null : i.lebar} cm
                     </div>
                   ))}
-                  <p>Total Harga :</p>
+                  <p>
+                    Estimasi Total Harga :{" "}
+                    {!sendDetailPemesanan ? null : item.totalHarga}
+                  </p>
                   <p>
                     Status : {!sendDetailPemesanan ? null : item.status}{" "}
                     {item.status === "Diterima" ? (

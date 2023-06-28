@@ -106,7 +106,10 @@ const Owner = () => {
                         {!listPemesanan ? null : i.lebar} cm
                       </div>
                     ))}
-                    <p>Total Harga :</p>
+                    <p>
+                      Estimasi Total Harga :{" "}
+                      {!setListPemesanan ? null : item.totalHarga}
+                    </p>
                     <p>Status : {!setListPemesanan ? null : item.status}</p>
                     <p>
                       Tanggal Pesan :{" "}
