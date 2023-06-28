@@ -70,11 +70,13 @@ const HalamanUser = () => {
       // fungsi untuk ambil data dari database api
       const res = await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_APIKEY}tentangkami`,
+        url: `${process.env.REACT_APP_APIKEY}tentangkami/${localStorage.getItem(
+          "access_id_user"
+        )}`,
       });
       console.log(res);
       //   nampung data yang sudah diambil
-      setTentangKami(res.data.data[1]);
+      setTentangKami(res.data.data);
     } catch (error) {
       console.log(error);
     }
