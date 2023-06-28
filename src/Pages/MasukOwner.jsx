@@ -49,7 +49,7 @@ const MasukOwner = () => {
       });
       console.log(res);
 
-      localStorage.setItem("access_id_user", res.data.data.id);
+      localStorage.setItem("access_id_owner", res.data.data.id);
       //   nampung data yang sudah diambil
     } catch (error) {
       console.log(error);

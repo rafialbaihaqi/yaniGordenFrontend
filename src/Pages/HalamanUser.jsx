@@ -71,7 +71,7 @@ const HalamanUser = () => {
       const res = await axios({
         method: "GET",
         url: `${process.env.REACT_APP_APIKEY}tentangkami/${localStorage.getItem(
-          "access_id_user"
+          "access_id_owner"
         )}`,
       });
       console.log(res);
