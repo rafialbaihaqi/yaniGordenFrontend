@@ -67,13 +67,11 @@ const EditKomponen = () => {
       // fungsi untuk ambil data dari database api
       const res = await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_APIKEY}tentangkami${localStorage.getItem(
-          "access_id_user"
-        )}`,
+        url: `${process.env.REACT_APP_APIKEY}tentangkami`,
       });
       console.log(res);
       //   nampung data yang sudah diambil
-      setTentangKami(res.data.data);
+      setTentangKami(res.data.data[1]);
     } catch (error) {
       console.log(error);
     }

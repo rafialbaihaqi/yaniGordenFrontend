@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Col, Container, Row, Button } from "react-bootstrap";
-import { Navigate } from "react-router-dom";
+
 
 const Owner = () => {
   const [listPemesanan, setListPemesanan] = useState([]);
