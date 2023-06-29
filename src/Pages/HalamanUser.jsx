@@ -1,6 +1,5 @@
-import { Col, Container, Row, Button, Carousel } from "react-bootstrap";
+import { Col, Container, Row, Carousel } from "react-bootstrap";
 import CardProduct from "../Components/CardProduct";
-import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import React, { useState } from "react";
 import whatsapp from "../Assets/images/whatsapp.svg";
@@ -8,7 +7,7 @@ import email from "../Assets/images/email.svg";
 
 
 const HalamanUser = () => {
-  const navigate = useNavigate();
+
 
   // untuk menampilkan semua data produk
   // index pertama untuk baca data index ke dua untuk masukan data
@@ -70,11 +69,13 @@ const HalamanUser = () => {
       // fungsi untuk ambil data dari database api
       const res = await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_APIKEY}tentangkami`,
+        url: `${process.env.REACT_APP_APIKEY}tentangkami/${localStorage.getItem(
+          "access_id_owner"
+        )}`,
       });
       console.log(res);
       //   nampung data yang sudah diambil
-      setTentangKami(res.data.data[1]);
+      setTentangKami(res.data.data);
     } catch (error) {
       console.log(error);
     }

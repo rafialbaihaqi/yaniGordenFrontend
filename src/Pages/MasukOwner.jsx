@@ -28,13 +28,32 @@ const MasukOwner = () => {
       console.log(res);
 
       localStorage.setItem("access_token_owner", res.data.aksesToken);
-
+      getDetailLoginOwner(res.data.aksesToken);
       navigate("/owner");
 
       //   nampung data yang sudah diambil
     } catch (error) {
       console.log(error);
       setShowModal(true);
+    }
+  };
+
+  const getDetailLoginOwner = async (token) => {
+    try {
+      // fungsi untuk ambil data dari database api
+      const res = await axios({
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        url: `${process.env.REACT_APP_APIKEY}owner/profile/me`,
+      });
+      console.log(res);
+
+      localStorage.setItem("access_id_owner", res.data.data.id);
+      //   nampung data yang sudah diambil
+    } catch (error) {
+      console.log(error);
     }
   };
 
