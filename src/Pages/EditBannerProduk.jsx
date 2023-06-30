@@ -122,7 +122,7 @@ const EditBannerProduk = () => {
                 <Form.Control
                   type="text"
                   placeholder=""
-                  value={formEditBanner.nama}
+                  value={formEditBanner.namaProduk}
                   onChange={(e) =>
                     setFormEditBanner((prevFormEditBanner) => ({
                       ...prevFormEditBanner,
@@ -149,6 +149,7 @@ const EditBannerProduk = () => {
                 <Form.Group controlId="formFile" className=" mt-3">
                   <Form.Label>Gambar</Form.Label>
                   <Form.Control onChange={handleFileChange} type="file" />
+                  <p className="p-caraukur">*Maksimal ukuran gambar 2 mb</p>
                 </Form.Group>
               </div>
             </Form>

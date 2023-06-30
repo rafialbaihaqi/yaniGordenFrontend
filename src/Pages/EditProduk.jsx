@@ -215,6 +215,7 @@ const ProdukOwner = () => {
                 <Form.Group controlId="formFile" className=" mt-3">
                   <Form.Label>Gambar</Form.Label>
                   <Form.Control onChange={handleFileChange} type="file" />
+                  <p className="p-caraukur">*Maksimal ukuran gambar 2 mb</p>
                 </Form.Group>
               </div>
 

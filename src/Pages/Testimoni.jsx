@@ -101,6 +101,7 @@ const [showModal, setShowModal] = useState(false);
                     onChange={handleImageChange}
                     type="file"
                   />
+                  <p className="p-caraukur">*Maksimal ukuran gambar 2 mb</p>
                 </Form.Group>
               </div>
 

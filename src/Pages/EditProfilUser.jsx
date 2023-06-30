@@ -175,6 +175,7 @@ const EditProfilUser = () => {
                     </div>
                   )}
                 </div>
+                <p className="p-caraukur">*Maksimal ukuran gambar 2 mb</p>
               </Form.Group>
             </Form>
 
