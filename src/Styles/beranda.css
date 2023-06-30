@@ -142,14 +142,20 @@
   background-color: #e5d4cd !important;
 }
 
+.p-caraukur{
+  font-size: 14px;
+}
+
 .btn-pesan {
   background-color: #b28474 !important;
   color: #2e1114 !important;
+  border: none !important;
 }
 /* respoonsive mobile */
 @media (max-width: 576px) {
   .btn-pesan {
-    font-size: 12px !important;
+    font-size: 16px !important;
+     border: none !important;
   }
 }
 
@@ -359,6 +365,17 @@
   align-items: center;
   justify-content: center;
 }
+
+/* mobile container carousel home */
+@media (max-width: 576px) {
+  .carousel-container-home {
+    max-height: 250px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* imgae carousel home */
 .carousel-image-home {
   object-fit: contain;

@@ -6,6 +6,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import g3 from "../Assets/images/g3.jpg";
 import { useRef, useState, useEffect } from "react";
 import axios from "axios";
+import yglogo from "../Assets/images/yglogo.svg";
 
 
 const NavigationBarOwner = (props) => {
@@ -95,7 +96,7 @@ const NavigationBarOwner = (props) => {
             as={Link}
             to="/owner"
           >
-            YG
+            <img src={yglogo} alt="yglogo" />
           </Navbar.Brand>
 
           {/* img profil */}

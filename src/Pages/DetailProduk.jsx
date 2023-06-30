@@ -169,6 +169,9 @@ const DetailProduk = () => {
             <div className="title-deskripsi mt-4">
               <h5 className="fw-bolder">Masukkan Ukuran</h5>
             </div>
+            <p className="p-caraukur">
+              *Total harga gorden mengikuti jumlah ukuran lebar
+            </p>
           </Col>
         </Row>
         <Row className="gap-3 mb-4">
@@ -186,9 +189,7 @@ const DetailProduk = () => {
                 }}
                 aria-label="Default select example"
               >
-                <option value="Pintu">
-                  Pintu
-                </option>
+                <option value="Pintu">Pintu</option>
                 <option value="Jendela">Jendela</option>
                 <option value="Pintu Depan">Pintu Depan</option>
               </select>
@@ -354,10 +355,6 @@ const DetailProduk = () => {
             </div>
           );
         })}
-
-        <div>
-          <h4>Estimasi Total Harga : </h4>
-        </div>
 
         <Col className="my-5">
           <div className="text-center">

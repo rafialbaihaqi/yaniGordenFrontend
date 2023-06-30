@@ -6,7 +6,7 @@ import { Link, Outlet, useNavigate} from "react-router-dom";
 import defaultprofile from "../Assets/images/defaultprofile.png";
 import { useRef, useState, useEffect } from "react";
 import axios from "axios";
-
+import yglogo from "../Assets/images/yglogo.svg";
 
 
 const NavigationBar = (props) => {
@@ -87,7 +87,7 @@ const NavigationBar = (props) => {
     <>
       <Navbar
         bg="white"
-        className="navbar py-3 shadow-sm"
+        className="navbar py-3 shadow-sm sticky-top"
         expand="lg"
         collapseOnSelect
       >
@@ -97,7 +97,7 @@ const NavigationBar = (props) => {
             as={Link}
             to="/"
           >
-            YG
+            <img src={yglogo} alt="yglogo" />
           </Navbar.Brand>
 
           {/* img profil */}

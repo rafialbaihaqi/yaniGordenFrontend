@@ -79,7 +79,7 @@ const Beranda = () => {
                     key={index + 1}
                     className="carousel-container-home"
                   >
-                    {!item.gambarProduk ? null : (
+                    {!item.gambarProduk ? null : (  
                       <img
                         className="d-block w-100 shadow carousel-image-home"
                         src={item.gambarProduk}
