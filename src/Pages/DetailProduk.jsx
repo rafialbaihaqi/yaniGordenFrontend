@@ -64,7 +64,7 @@ const DetailProduk = () => {
         },
       });
       console.log(res);
-      navigate("/hubungi");
+      navigate("/pesananuser");
       //   nampung data yang sudah diambil
     } catch (error) {
       console.log(error);

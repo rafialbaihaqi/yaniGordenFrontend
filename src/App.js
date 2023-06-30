@@ -7,7 +7,6 @@ import Daftar from "./Pages/Daftar";
 import Produk from "./Pages/Produk";
 import DetailProduk from "./Pages/DetailProduk";
 import DetailProdukOwner from "./Pages/DetailProdukOwner";
-import Hubungi from "./Pages/Hubungi";
 import TentangKami from "./Pages/TentangKami";
 import Masuk from "./Pages/Masuk";
 import PesananUser from "./Pages/PesananUser";

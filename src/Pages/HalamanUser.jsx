@@ -1,5 +1,5 @@
 import { Col, Container, Row, Carousel } from "react-bootstrap";
-import CardProduct from "../Components/CardProduct";
+import CardProductViewOwner from "../Components/CardProductViewOwner";
 import axios from "axios";
 import React, { useState } from "react";
 import whatsapp from "../Assets/images/whatsapp.svg";
@@ -172,7 +172,7 @@ const HalamanUser = () => {
             {listProduct.map((item, index) => {
               return (
                 <Col lg={3} xs={6} key={index + 1} className="mb-3">
-                  <CardProduct data={item} />
+                  <CardProductViewOwner data={item} />
                 </Col>
               );
             })}
