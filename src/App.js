@@ -86,7 +86,6 @@ function App() {
           </Route>
 
           <Route element={<ProtectedUserRoute />}>
-            <Route path="/hubungi" element={<Hubungi />} />
             <Route path="/editprofiluser" element={<EditProfilUser />} />
             <Route path="/pesananuser" element={<PesananUser />} />
             <Route path="/testimoni" element={<Testimoni />} />
