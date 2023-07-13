@@ -17,6 +17,7 @@ const Beranda = () => {
     getProduct();
   }, []);
 
+  // get data dari product API
   const getProduct = async () => {
     try {
       const res = await axios({
@@ -30,6 +31,7 @@ const Beranda = () => {
     }
   };
 
+  // get data dari banner API
   const getBanner = async () => {
     try {
       const res = await axios({
@@ -43,6 +45,7 @@ const Beranda = () => {
     }
   };
 
+  // handle perubahan pada carousel
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -61,7 +64,7 @@ const Beranda = () => {
           </Col>
         </Row>
       </Container>
-      {/* end of navigation bar */}
+      {/* akhir navigation bar */}
 
       {/* container carousel */}
       <Container fluid className="container-carousel">
@@ -100,7 +103,7 @@ const Beranda = () => {
           </Col>
         </Row>
       </Container>
-      {/* end of container carousel product */}
+      {/* akhir  container carousel product */}
 
       {/* container category */}
       <Container className="c-category">
@@ -112,7 +115,7 @@ const Beranda = () => {
           </Col>
         </Row>
       </Container>
-      {/* end of container category */}
+      {/* akhir container category */}
 
       {/* product container */}
       {!listProduct ? null : (
@@ -128,7 +131,7 @@ const Beranda = () => {
           </Row>
         </Container>
       )}
-      {/* end of product container */}
+      {/* akhir product container */}
     </>
   );
 };
