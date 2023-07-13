@@ -17,9 +17,7 @@ const TentangKami = () => {
       // fungsi untuk ambil data dari database api
       const res = await axios({
         method: "GET",
-        url: `${process.env.REACT_APP_APIKEY}tentangkami/${localStorage.getItem(
-          "access_id_user"
-        )}`,
+        url: `${process.env.REACT_APP_APIKEY}tentangkami`,
       });
       console.log(res);
       //   nampung data yang sudah diambil
